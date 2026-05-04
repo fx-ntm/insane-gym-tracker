@@ -1,4 +1,4 @@
-enum RegionName{
+internal enum RegionName{
     case gluteusMaximus
     case gluteusMedius
     case gluteusMinimus
