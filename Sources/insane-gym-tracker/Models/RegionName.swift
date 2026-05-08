@@ -1,4 +1,4 @@
-internal enum RegionName{
+internal enum RegionName: String, Codable{
     case gluteusMaximus
     case gluteusMedius
     case gluteusMinimus
