@@ -1,6 +1,8 @@
 import Foundation
+import SwiftData
 
-struct Training{
+@Model
+class Training{
     var date: Date = Date()
     var workoutList: [Workout] = []
 
@@ -8,10 +10,10 @@ struct Training{
         self.date = date
         self.workoutList = workoutList
     }
-    mutating func addIntoTraining(workout: Workout){
+    func addIntoTraining(workout: Workout){
         workoutList.append(workout)
     }
-    mutating func removeFromTraining(workout: Workout){
+    func removeFromTraining(workout: Workout){
         workoutList.removeAll { $0.name == workout.name }
     }
 }
